@@ -1,0 +1,200 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Welcome to Nandoso</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/slider-styles.css" type="text/css" media="all" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/slider.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+<div class="wrap">
+	<div class="top-head">
+		<div class="welcome">Welcome To <span> Nandoso </span></div>
+			<div class="top-nav">
+	        <ul>
+	            <li><a href="#">Login</a></li>
+	        </ul>
+	    </div>
+	    <div class="clear"></div>
+    </div>
+	<div class="header">
+	<div></div>
+	<div class="logo"><a href="index.html"><img src="images/logo2.png"  alt="Flowerilla"/></a></div>
+    <div class="clear"> </div>
+	</div>
+	<br></br>
+	<div class="nav">
+        <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Menu</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+            <div class="clear"> </div>
+        </ul>
+    </div>
+	<div class="main-body">
+	<div id="slider">
+			<a href="#" target="_blank">
+				<img src="images/chick_slider1.jpg" alt="Mini Ninjas" />
+			</a>
+			<a href="#" target="_blank">
+				<img src="images/chick_slider2.jpg" alt="Price of Persia" />
+			</a>
+			<a href="#" target="_blank">
+				<img src="images/chick_slider3.jpg" alt="Price of Persia" />
+			</a>
+	</div>
+	<div class="grids">
+		<ul>
+			<h4>Specials</h4>
+		<li>
+			<h3>Raspberry Brulée Cheesecake</h3>
+			<img src="images/thumb-1.jpg">
+			<p>Raspberry sauce swirled through a creamy white chocolate cheesecake. Lightly carmelized on top</p>
+			<button onclick='{ products += 1; current_price = "$12"; total_price += 12;  document.getElementById("no_products").innerHTML = products;  document.getElementById("current_price").innerHTML = current_price; document.getElementById("total_price").innerHTML = "$" + total_price; }'>$12</button>
+		</li>
+		<li>
+			<h3>Grilled Drumstick & Thigh </h3>
+			<img src="images/thumb-2.jpg">
+			<p>Your own tangy Peri-Peri infused oil to pour over creamy hummus. Dig in with chunks of seasonal vegetables</p>
+			<button onclick='{ products += 1; current_price = "$14"; total_price += 14;  document.getElementById("no_products").innerHTML = products;  document.getElementById("current_price").innerHTML = current_price; document.getElementById("total_price").innerHTML = "$" + total_price; }'>$14</button>
+		</li>
+		<li>
+			<h3>Peri Full Chicken Platter</h3>
+			<img src="images/thumb-3.jpg">
+			<p>Whole Peri Chicken platter with your choice of 2 large sides Perfect for 2-3 People</p>
+			<button onclick='{ products += 1; current_price = "$20"; total_price += 20;  document.getElementById("no_products").innerHTML = products;  document.getElementById("current_price").innerHTML = current_price; document.getElementById("total_price").innerHTML = "$" + total_price; }'>$20</button>
+		</li>
+		
+		<div class="clear"> </div>
+		
+		<li>
+			<h3>Nandoso classic Chips</h3>
+			<img src="images/thumb-5.jpg">
+			<p>Nandoso's classic fries, deep fried to perfection and served with special tomato sauce</p>
+			<button onclick='{ products += 1; current_price = "$6"; total_price += 6;  document.getElementById("no_products").innerHTML = products;  document.getElementById("current_price").innerHTML = current_price; document.getElementById("total_price").innerHTML = "$" + total_price; }'>$6</button>
+		</li>
+		<li>
+			<h3>French Croissants</h3>
+			<img src="images/thumb-6.jpg">
+			<p>Dig into Nandoso's sweet french croissants and treat yourself for the day you deserve it</p>
+			<button onclick='{ products += 1; current_price = "$8"; total_price += 8;  document.getElementById("no_products").innerHTML = products;  document.getElementById("current_price").innerHTML = current_price; document.getElementById("total_price").innerHTML = "$" + total_price; }'>$8</button>
+		</li>
+		<li class="last">
+			<h3>Vegetable Salad</h3>
+			<img src="images/thumb-4.jpg">
+			<p>Made with romaine lettuce, Parmesan, sun-dried tomatoes, Caesar dressing and housemade croutons </p>
+			<button onclick='{ products += 1; current_price = "$9"; total_price += 9;  document.getElementById("no_products").innerHTML = products;  document.getElementById("current_price").innerHTML = current_price; document.getElementById("total_price").innerHTML = "$" + total_price; }'>$9</button>
+		</li>
+		<a href="menu.html">View all</a>
+		</ul>
+		<div class="clear"> </div>
+	</div>
+	<div class="boxes">
+		<div class="order">
+		<ul>
+			<li>
+			<h3>ORDER</h3>
+			<h4>No Products &nbsp;&nbsp; <span id="no_products">0<span></h4>
+			<p>shopping &nbsp;&nbsp;<span id="current_price">$0:00</span></p>
+			<p>Total &nbsp;&nbsp;<span id="total_price">$0:00</span></p>
+			<h6><a href="#">Check-out</a></h6>
+			<h6><a href="#">cart</a></h6>
+		</li>
+		</ul>
+		</div>
+		<div class="clear"> </div>
+		<ul>
+			<li>
+			<h3>Restaurants Hours</h3>
+			<h4>Breakfast </h4>
+			<p>Monday - Friday &nbsp;&nbsp; 7am - 11am</p>
+			<p>Saturaday - Sunday &nbsp;&nbsp; 8 am - 11pm</p>
+			<h4>Lunch </h4>
+			<p>Monday - Friday &nbsp;&nbsp; 12pm -  5pm</p>
+			<p>Saturaday - Sunday &nbsp;&nbsp; 1pm - 6pm</p>
+		</li>
+		<li>
+			<h3>Location</h3>
+			<p>1 Dominion Road</p>
+			<p>Mt.Eden</p>
+			<p>Auckland 1024</p>
+			<p>Ph: (09) 12378945</p>
+			<h3>Feedback</h3>
+			<p>Your food is amazing!!</p>
+			<a href="contact.html"><button>Read more</button></a>
+		</li>
+		<div class="clear"> </div>
+		</ul>
+	</div>
+	<div class="clear"> </div>
+    </div>
+</div>
+<div class="footer1">
+	<div class="wrap">
+			<div class="footer-grids">
+				<div class="footer-grid1">
+					<h3>INFORMATION</h3>
+					<ul>
+						<li><a href="">Our Store</a></li>
+						<li><a href="">Contact Us</a></li>
+						<li><a href="">Legal Notice</a></li>
+						<li><a href="">About Us</a></li>
+					</ul>
+				</div>
+				<div class="footer-grid1">
+					<h3>OUR OFFERS</h3>
+					<ul>
+						<li><a href="">specials</a></li>
+						<li><a href="">New Products</a></li>
+						<li><a href="">Top Sellers</a></li>
+						<li><a href="">Samples</a></li>
+					</ul>
+				</div>
+				<div class="footer-grid1">
+					<h3>YOUR ACCOUNT</h3>
+					<ul>
+						<li><a href="">Your Orders</a></li>
+						<li><a href="">Your payment</a></li>
+						<li><a href="">Your Address</a></li>
+						<li><a href="">Your personalinfo</a></li>
+					</ul>
+				</div>
+				
+				<div class="footer-grid2">
+					<h3>FOLLOW US</h3>
+					<ul>
+						<li><a href="https://www.facebook.com/Nandos"><img src="images/facebook.png" title="facebook"/></a></li>
+						<li><a href="https://twitter.com/nandosusa"><img src="images/twitter.png" title="twitter"></a></li>
+						<li><a href="https://www.instagram.com/nandosaus/"><img src="images/instagram.jpg" title="twitter"></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="clear"> </div>
+			<div class="copy">
+    	<p>&copy; 2015 Nandoso | All Rights Reserved</p>
+    </div>
+    </div>
+			<div class="clear">
+			</div>
+		</div>
+<script>
+			$('#slider').coinslider();	
+			
+</script>
+
+<script>
+
+	var products = 0;
+	var current_price = 0;
+	var total_price = 0;
+	
+</script>
+
+</body>
+</html>
