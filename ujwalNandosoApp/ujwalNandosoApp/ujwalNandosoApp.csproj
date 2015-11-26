@@ -128,6 +128,8 @@
     <Content Include="images\thumb-8.jpg" />
     <Content Include="images\twitter.png" />
     <Content Include="index.html" />
+    <Content Include="js\elevator.js" />
+    <Content Include="js\elevator.min.js" />
     <Content Include="js\jquery.js" />
     <Content Include="js\jquery1.js" />
     <Content Include="js\slider.js" />
