@@ -1,0 +1,172 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Welcome to Nandoso</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/commentscss.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/slider-styles.css" type="text/css" media="all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet' type='text/css'>
+    <script src="js/elevator.js"></script>
+    <script src="js/elevator.min.js"></script>
+    <script type="text/javascript">  var appInsights=window.appInsights||function(config){    function r(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},u=document,e=window,o="script",s=u.createElement(o),i,f;for(s.src=config.url||"//az416426.vo.msecnd.net/scripts/a/ai.0.js",u.getElementsByTagName(o)[0].parentNode.appendChild(s),t.cookie=u.cookie,t.queue=[],i=["Event","Exception","Metric","PageView","Trace"];i.length;)r("track"+i.pop());return r("setAuthenticatedUserContext"),r("clearAuthenticatedUserContext"),config.disableExceptionTracking||(i="onerror",r("_"+i),f=e[i],e[i]=function(config,r,u,e,o){var s=f&&f(config,r,u,e,o);return s!==!0&&t["_"+i](config,r,u,e,o),s}),t    }({        instrumentationKey:"4c151714-c0be-4f28-9338-502bf4bb4434"    });           window.appInsights=appInsights;    appInsights.trackPageView();</script>
+
+    <style type="text/css">
+        .container {
+            background-color: #99CCFF;
+            border: thick solid #808080;
+            padding: 20px;
+            margin: 20px;
+            
+        }
+    </style>
+
+</head>
+<body>
+    <div class="wrap">
+        <div class="top-head">
+            <div class="welcome">Welcome To <span> Nandoso </span></div>
+            <div class="top-nav">
+                <ul>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </div>
+            <div class="clear"> </div>
+        </div>
+        <div class="header">
+            <div class="logo"><a href="index.html"><img src="images/logo2.png" alt="Flowerilla" /></a></div>
+            <div class="clear"> </div>
+        </div>
+        <br></br>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li class="active"><a href="livechat.html">Live Chat</a></li>
+                <div class="clear"></div>
+            </ul>
+        </div>
+        
+        
+        <div class="main-body">
+
+            <div class="container">
+                <input type="text" id="message" />
+                <input type="button" id="sendmessage" value="Send" />
+                <input type="hidden" id="displayname" />
+                <ul id="discussion"></ul>
+            </div>
+        </div>
+
+        <div class="clear"> </div>
+    </div>
+    <div class="footer1">
+        <div class="wrap">
+            <div class="footer-grids">
+                <div class="footer-grid1">
+                    <h3>INFORMATION</h3>
+                    <ul>
+                        <li><a href="">Our Store</a></li>
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="">Legal Notice</a></li>
+                        <li><a href="">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-grid1">
+                    <h3>OUR OFFERS</h3>
+                    <ul>
+                        <li><a href="">specials</a></li>
+                        <li><a href="">New Products</a></li>
+                        <li><a href="">Top Sellers</a></li>
+                        <li><a href="">Samples</a></li>
+                    </ul>
+                </div>
+                <div class="footer-grid1">
+                    <h3>YOUR ACCOUNT</h3>
+                    <ul>
+                        <li><a href="">Your Orders</a></li>
+                        <li><a href="">Your payment</a></li>
+                        <li><a href="">Your Address</a></li>
+                        <li><a href="">Your personalinfo</a></li>
+                    </ul>
+                </div>
+                <div class="footer-grid2">
+                    <h3>FOLLOW US</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com/Nandos"><img src="images/facebook.png" title="facebook" /></a></li>
+                        <li><a href="https://twitter.com/nandosusa"><img src="images/twitter.png" title="twitter"></a></li>
+                        <li><a href="https://www.instagram.com/nandosaus/"><img src="images/instagram.jpg" title="twitter"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clear"> </div>
+            <div class="copy">
+                <p>&copy; 2015 Nandoso | All Rights Reserved</p>
+            </div>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+
+
+    <script>
+			$('#slider').coinslider();
+    </script>
+
+    <div class="elevator-button">Back to Top</div>
+    <script>
+// Elevator script included on the page, already.
+
+window.onload = function() {
+  var elevator = new Elevator({
+    element: document.querySelector('.elevator-button'),
+    //mainAudio: '/src/to/audio.mp3',
+    //endAudio: '/src/to/end-audio.mp3'
+  });
+}
+    </script>
+
+    <!--Script references. -->
+    <!--Reference the jQuery library. -->
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <!--Reference the SignalR library. -->
+    <script src="js/jquery.signalR-2.2.0.min.js"></script>
+    <!--Reference the autogenerated SignalR hub script. -->
+    <script src="signalr/hubs"></script>
+    <!--Add script to update the page and send messages.-->
+    <script type="text/javascript">
+        $(function () {
+            // Declare a proxy to reference the hub.
+            var chat = $.connection.chatHub;
+            // Create a function that the hub can call to broadcast messages.
+            chat.client.broadcastMessage = function (name, message) {
+                // Html encode display name and message.
+                var encodedName = $('<div />').text(name).html();
+                var encodedMsg = $('<div />').text(message).html();
+                // Add the message to the page.
+                $('#discussion').append('<li><strong>' + encodedName
+                    + '</strong>:&nbsp;&nbsp;' + encodedMsg + '</li>');
+            };
+            // Get the user name and store it to prepend to messages.
+            $('#displayname').val(prompt('Enter your name:', ''));
+            // Set initial focus to message input box.
+            $('#message').focus();
+            // Start the connection.
+            $.connection.hub.start().done(function () {
+                $('#sendmessage').click(function () {
+                    // Call the Send method on the hub.
+                    chat.server.send($('#displayname').val(), $('#message').val());
+                    // Clear text box and reset focus for next comment.
+                    $('#message').val('').focus();
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
