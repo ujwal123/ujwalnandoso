@@ -17,9 +17,5 @@ namespace ujwalNandosoApp.Models
         public string name { get; set; }
 
         public string comment { get; set; }
-
-        public virtual ICollection<string> commentsPosted { get; set; }
-
-
     }
 }

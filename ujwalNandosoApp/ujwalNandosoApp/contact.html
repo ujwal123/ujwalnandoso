@@ -51,28 +51,53 @@
             </div>
             <div>
             	<span><label>Email</label></span>
-            	<span><input type="text" value="" /></span>
+            	<span><input id="email" type="text" value="" /></span>
             </div>
         	<div>
             	<span><label>body</label></span>
             	<span><textarea id="message"></textarea></span>
             </div>
         	<div>
-            	<span><button type="button" onclick='
+            	<span><button id="submitButton" type="button" onclick='
 				{ 
-				
+
+				    var name = document.getElementById("name").value;
+				    var message = document.getElementById("message").value;
+				    var email = document.getElementById("email").value;
+
+				    document.getElementById("submitButton").innerHTML = "Submitted";
+
+
+				   document.getElementById("name").value = "";
+				   document.getElementById("message").value = "";
+				   document.getElementById("email").value = "";
+				   
+				   var subelement = "<div class=\"dialogbox\">";
+				   subelement += "<div class=\"body\">";
+				   subelement += "<span class=\"tip tip-up\">";
+				   subelement += "</span>";
+                   subelement += "<div class=\"message\">";
+                   subelement += "<span>";
+                    subelement += message;
+                    subelement += "</span>" + "<span>" + "-" + name + "</span>" + "</div>" + "</div>" + "</div>";
+
+
+
+				  
+
+				   document.getElementById("commentContainer").innerHTML += subelement;
+
 						
 				
 				
-				}
-				'>Submit</button></span>
+				}'>Submit</button></span>
             </div>
 			
 			<br></br>
 			
 			<h1>Feedback from customers</h1>
 			
-			<div class="container">
+			<div id="commentContainer" class="container">
 			
 			
 				<div class="dialogbox">
